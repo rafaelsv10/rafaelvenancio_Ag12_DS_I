@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus sites favoritos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .site-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .site-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .site-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            display: block;
+            color: #2980b9;
+        }
+
+        .site-image {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 8px;
+            background-color: #fafafa;
+            margin-bottom: 15px;
+        }
+
+        .site-link {
+            text-decoration: none;
+            color: #e67e22;
+            font-weight: 500;
+            font-size: 0.9em;
+            word-break: break-all;
+        }
+
+        .site-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Meus sites favoritos: Rafael</h1>
+
+    <div class="container">
+        <!-- Site 1 -->
+        <div class="site-card">
+            <span class="site-name">GitHub</span>
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="site-image">
+            <a href="https://github.com" target="_blank" class="site-link">github.com</a>
+        </div>
+
+        <!-- Site 2 -->
+        <div class="site-card">
+            <span class="site-name">Microsoft Learn (.NET)</span>
+            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageMediaData/RE4OAgf?ver=6787" alt="Microsoft Learn" class="site-image">
+            <a href="https://learn.microsoft.com/dotnet/" target="_blank" class="site-link">learn.microsoft.com</a>
+        </div>
+
+        <!-- Site 3 -->
+        <div class="site-card">
+            <span class="site-name">Python.org</span>
+            <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python" class="site-image">
+            <a href="https://www.python.org" target="_blank" class="site-link">python.org</a>
+        </div>
+
+        <!-- Site 4 -->
+        <div class="site-card">
+            <span class="site-name">Wizarding World</span>
+            <img src="https://images.ctfassets.net/usf1vwtu24eb/46097479707252/097e33e248067ed77e87123ac27cc6e1/Wizarding_World_logo.png" alt="Wizarding World" class="site-image">
+            <a href="https://www.wizardingworld.com" target="_blank" class="site-link">wizardingworld.com</a>
+        </div>
+
+        <!-- Site 5 -->
+        <div class="site-card">
+            <span class="site-name">Banco Central do Brasil</span>
+            <img src="https://www.bcb.gov.br/content/img/logo_bcb.png" alt="BCB" class="site-image">
+            <a href="https://www.bcb.gov.br" target="_blank" class="site-link">bcb.gov.br</a>
+        </div>
+    </div>
+
+</body>
+</html>
